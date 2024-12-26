@@ -34,6 +34,30 @@
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
+        .price-tracker {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1em;
+            margin-top: 1em;
+        }
+        .crypto-card {
+            background: #fff;
+            padding: 1em;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .price {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin: 0.5em 0;
+        }
+        .change-positive {
+            color: green;
+        }
+        .change-negative {
+            color: red;
+        }
         footer {
             background-color: #333;
             color: white;
@@ -48,6 +72,7 @@
 <body>
     <nav>
         <a href="#">Home</a>
+        <a href="#prices">Prices</a>
         <a href="#news">News</a>
         <a href="#community">Community</a>
         <a href="#resources">Resources</a>
@@ -57,6 +82,27 @@
         <div class="section">
             <h1>Welcome to CryptoAnon Community</h1>
             <p>Your trusted source for cryptocurrency insights and discussions.</p>
+        </div>
+
+        <div class="section" id="prices">
+            <h2>Live Cryptocurrency Prices</h2>
+            <div class="price-tracker">
+                <div class="crypto-card">
+                    <h3>Bitcoin (BTC)</h3>
+                    <div class="price">$42,567.89</div>
+                    <div class="change-positive">+2.5%</div>
+                </div>
+                <div class="crypto-card">
+                    <h3>Ethereum (ETH)</h3>
+                    <div class="price">$2,345.67</div>
+                    <div class="change-negative">-1.2%</div>
+                </div>
+                <div class="crypto-card">
+                    <h3>Binance Coin (BNB)</h3>
+                    <div class="price">$321.45</div>
+                    <div class="change-positive">+0.8%</div>
+                </div>
+            </div>
         </div>
 
         <div class="section" id="news">
